@@ -1,4 +1,5 @@
 import tkinter as tk
+import FormVoiceAssistant as FVA
 
 # Tạo một instance của Tkinter
 root = tk.Tk()
@@ -32,15 +33,15 @@ def move_text():
 move_text()
 
 # Tạo button "Voice_Assistant" và đặt vị trí
-voice_button = tk.Button(root, text="Voice_Assistant", font=("Arial", 16))
+voice_button = tk.Button(root, text="Voice_Assistant", font=("Times New Roman", 16),command=FVA.run_form_NTDung_14)
 voice_button.place(x=250, y=250)
 
 # Tạo button "EDA" và đặt vị trí
-eda_button = tk.Button(root, text="EDA", font=("Arial", 16))
+eda_button = tk.Button(root, text="EDA", font=("Times New Roman", 16))
 eda_button.place(x=450, y=250)
 
 # Tạo button "Thoát" và đặt vị trí
-exit_button = tk.Button(root, text="Thoát", font=("Arial", 16), command=root.quit)
+exit_button = tk.Button(root, text="Thoát", font=("Times New Roman", 16), command=root.destroy)
 exit_button.place(x=550, y=250)
 
 # Hiển thị form
