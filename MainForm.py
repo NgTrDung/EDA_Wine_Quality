@@ -6,7 +6,6 @@ root = tk.Tk()
 
 # Lấy thông tin kích thước màn hình
 screen_width = root.winfo_screenwidth()
-screen_height = root.winfo_screenheight()
 
 # Tính toán vị trí hiển thị form
 x = (screen_width/2) - (1000/2)
